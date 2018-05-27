@@ -134,13 +134,13 @@ body {
   #my-footer span {
     font-size: 0.8rem; }
 
-.carousel-caption {
+.carousel-caption h1, .carousel-caption h2, .carousel-caption h3, .carousel-caption h4, .carousel-caption h5, .carousel-caption h6, .carousel-caption p {
+  font-size: 0.8rem; }
+.carousel-caption a {
   color: #fff; }
+@media (min-width: 992px) {
   .carousel-caption h1, .carousel-caption h2, .carousel-caption h3, .carousel-caption h4, .carousel-caption h5, .carousel-caption h6, .carousel-caption p {
-    font-size: 0.8rem; }
-  @media (min-width: 992px) {
-    .carousel-caption h1, .carousel-caption h2, .carousel-caption h3, .carousel-caption h4, .carousel-caption h5, .carousel-caption h6, .carousel-caption p {
-      font-size: 1rem; } }
+    font-size: 1rem; } }
 
 .links:hover {
   text-decoration: none !important; }
@@ -167,5 +167,8 @@ body {
 .btn-primary {
   background-color: #2F6690 !important;
   border-color: #2F6690 !important; }
+
+.up-down i {
+  color: #fff !important; }
 
 /*# sourceMappingURL=main.css.map */
