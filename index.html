@@ -25,13 +25,25 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about" id="about-section">About Me</a>
+              <a class="nav-link js-scroll-trigger" href="#about" id="about-section">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#technicals" id="about-section">Technicals</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#projects" id="projects-section">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact" id="contact-section">Contact me</a>
+              <a class="nav-link js-scroll-trigger" href="#contact" id="contact-section">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://instagram.com/twentytoes.jpg/"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fab fa-linkedin"></i></a>
             </li>
           </ul>
         </div>
@@ -54,16 +66,18 @@
 				<h1 class="text-center">About Emmanuel</h1>
 				<div class="dropdown-divider"></div>
 				<br>
-				<p>I was born in Jakarta, Indonesia. I grew up in Singapore, where I have spent most of my life being accustomed to the Singaporean culture. Obviously, in this case, I love food. A lot.</p>
+				<p>I was born in Jakarta, Indonesia. I grew up in Singapore, where I have spent most of my life studying, working and living.</p>
 
-				<p>My interest in the software computing world came late after my Polytechnic graduation, during my quarter-life crisis (yes, I believe that's a thing). During this time, I kept trying to figure out how to learn to code, trying my hand with Xcode first, then Python, then Harvard's CS50. I couldn't get anything, until I decided to start off with the Odin Project.</p>
+				<p>I had a thing for technological hardware in my pre-teen years. My interest in the software computing world started back in 2016, when I was awed by app startup stories. Because of this, I've spent hours figuring out where to start. Tried my hand with Xcode, then Python, then Harvard's CS50. I kept getting stuck, until I decided to start off web programming with The Odin Project.</p>
 
-				<p>Since then, I fell in love with coding. If anyone wants to learn programming, and finds that the learning curve is too steep, I strongly recommend learning web development first. Somehow, or at least for me, it worked.</p>
+				<p>I fell in love with computer programming. If anyone wants to learn, and finds that the learning curve is too steep, I strongly recommend learning web development first. Somehow, or at least for me, it worked.</p>
 
-				<p>My hobbies include tennis, the occasional English football, going to new places for adventures, and cooking.</p>
+				<p>My occasional hobbies include blogging, exploring new places and eating good food.</p>
 			</div>
 			<div class="col"></div>
 		</div>
+	</div>
+	<div class="container section d-flex flex-column justify-content-center" id="technicals">
 		<div class="row">
 			<div class="col"></div>
 			<div class="col-md-8 text-center">
@@ -94,52 +108,55 @@
 			<div class="col-md-8">
 				<h1 class="text-center">Some of his works:</h1>
 				<div class="dropdown-divider"></div>
-				<div class="row text-dark">
-					<div class="col-md-6">
-						<div class="card">
-							<img class="card-img-top" src="..." alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title">Twenty Toes Travel</h5>
-								<p class="card-text">Twenty Toes Travel is my pilot blog programme made from scratch with HTML/CSS/Javascript, PHP and the Wordpress CMS. This is my largest project to date, and content is updated regularly as my food &amp; travel blog.</p>
-								<a href="https://www.twentytoestravel.com/" class="btn btn-primary">Check it out!</a>
+				<br>
+				<div id="carousel" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel" data-slide-to="1"></li>
+						<li data-target="#carousel" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<div class="carousel-item active">
+							<div class="img-overlay"></div>
+							<img class="d-block img-fluid" src="../assets/images/twentytoes.gif" alt="Twenty Toes Travel Blog">
+							<div class="carousel-caption d-sm-block">
+								<a class="text-white links" href="https://www.twentytoestravel.com/">
+									<h3>Twenty Toes Travel Blog</h3>
+									<p>Twenty Toes Travel is my pilot blog programme made from scratch with HTML/CSS/Javascript, PHP and the Wordpress CMS. This is my largest project to date, and content is updated regularly as my food &amp; travel blog.</p>
+								</a>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="img-overlay"></div>
+							<img class="d-block img-fluid" src="../assets/images/spiderpig.gif" alt="Maze Trotter">
+							<div class="carousel-caption d-sm-block">
+								<a class="text-white links" href="https://scratch.mit.edu/projects/174190815/">
+									<h3>Maze Trotter Game</h3>
+									<p>Maze Trotter is a game that I've created using MIT's Scratch. Spider-pig has to find his way through a maze to have a bite of his favourite donut. But some perils await him in the form of Homer, who tries his best to catch him.</p>
+								</a>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="img-overlay"></div>
+							<img class="d-block img-fluid" src="../assets/images/ccverifier_screenshot.png" alt="Credit Card Verifier">
+							<div class="carousel-caption d-sm-block">
+								<a class="text-white links" href="https://docs.cs50.net/problems/credit/credit.html">
+									<h3>Credit Card Verifier</h3>
+									<p>This credit card verifier takes advantage of Luhn's algorithm to check whether the credit card number keyed in is valid, to VISA/Mastercard/AMEX. Programmed using the C language, this was my assignment for Harvard CS50's Problem Set 1 (2017). (Code not provided to prevent plagiarism)</p>
+								</a>
 							</div>
 						</div>
 					</div>
-
-					<div class="col-md-6">
-						<div class="card">
-							<img class="card-img-top" src="..." alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title">Maze Trotter - MIT Scratch Project</h5>
-								<p class="card-text">Maze Trotter is a game I've created using MIT's Scratch platform designed to teach the basics of computer programming. This was part of my Harvard's CS50 Problem Set 0 (2017) Project as a self-taught learning experience.</p>
-								<a href="#" class="btn btn-primary">Check it out!</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6">
-						<div class="card">
-							<img class="card-img-top" src="..." alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title">Credit Card Checker</h5>
-								<p class="card-text">This is my project of a credit-card checker built using the C language. It verifies whether the credit card number belongs to either the vendors AMEX, MasterCard VISA or an invalid card.</p>
-								<a href="#" class="btn btn-primary">Check it out!</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6">
-						<div class="card">
-							<img class="card-img-top" src="..." alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								<a href="#" class="btn btn-primary">Check it out!</a>
-							</div>
-						</div>
-					</div>
-
+					<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+					</a>
 				</div>
+				
 			</div>
 			<div class="col"></div>
 		</div>

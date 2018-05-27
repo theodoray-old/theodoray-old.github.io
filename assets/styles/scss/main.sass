@@ -2,6 +2,7 @@ $mainCol: #3A7CA5
 $darkMain: #2F6690
 $height: 100vh
 $mTopBottom: 50px
+$mainColOverlay: rgba(58, 124, 165, 0.85)
 
 *
   font-family: 'Josefin Sans', Helvetica, sans-serif
@@ -52,6 +53,10 @@ body
   border: 4px solid white !important
   border-radius: 100% !important
   background: transparent
+
+  i
+    font-size: 40px
+    margin-top: 10px
 
   &:hover, &:focus
     background: rgba(255, 255, 255, 0.1)
@@ -116,6 +121,7 @@ body
       background-color: transparent
 
 #about, 
+#technicals,
 #projects, 
 #contact
   &.container
@@ -144,3 +150,43 @@ body
   line-height: 60px
   span
     font-size: 0.8rem
+
+.carousel-caption
+  h1, h2, h3, h4, h5, h6, p
+    font-size: 0.8rem
+
+  a
+  color: #fff
+
+  @media (min-width: 992px)
+    h1, h2, h3, h4, h5, h6, p
+      font-size: 1rem
+
+
+.links
+  &:hover
+    text-decoration: none !important
+
+.img-overlay
+  min-width: 100%
+  min-height: 100%
+  position: absolute
+  background-color: $mainColOverlay
+
+.carousel-item
+  img
+    width: 640px
+    margin: 0 auto
+    height: 313px
+
+.carousel-control-prev
+  @media (min-width: 1200px)
+    left: -50px !important
+
+.carousel-control-next
+  @media (min-width: 1200px)
+    right: -50px !important
+
+.btn-primary
+  background-color: $darkMain !important
+  border-color: $darkMain !important
